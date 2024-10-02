@@ -1,0 +1,89 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
+*{
+    font-family: "Play";
+    font-weight: 700;
+}
+
+body{
+    text-align: center;
+}
+
+@media (max-width: 500px){
+    .btn-container .btn{
+        width: 100px;
+        height: 100px;
+        margin: 15px;
+        border: 5px solid black;
+    
+    }
+}
+
+.btn{
+    height: 160px;
+    width: 160px;
+    border-radius: 20%;
+    border: 5px solid black;
+    padding: 10px;
+    margin: 2em;
+    --bottom-color: #000000;
+    --right-color: #000000;    
+    box-shadow:
+      1px 0   0 var(--right-color),
+      1px 1px 0 var(--bottom-color),
+      2px 1px 0 var(--right-color),
+      2px 2px 0 var(--bottom-color),
+      3px 2px 0 var(--right-color),
+      3px 3px 0 var(--bottom-color),
+      4px 3px 0 var(--right-color),
+      4px 4px 0 var(--bottom-color);
+    
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+}
+
+.red{
+    background-color: rgb(255, 18, 57);
+}
+.yellow{
+    background-color: rgb(237, 233, 7);
+}
+.green{
+    background-color: rgb(44, 226, 7);
+}
+.purple{
+    background-color: rgb(189, 13, 225);
+}
+
+
+.gameFlash{
+    background-color: #fff;
+    animation : ease-in-out 0.1s game;
+
+}
+@keyframes game {
+    from {
+        scale: 1
+    }
+    to {
+        scale : 1.1
+    }
+}
+
+.userFlash{
+    background-color: #ffffff;
+    animation : ease-in-out 0.7s pop;
+}
+@keyframes pop {
+    from{
+        scale: 1
+    } 
+    to{
+        scale : 2
+    }
+}
+
