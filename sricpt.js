@@ -10,7 +10,7 @@ let highScore = 0
 const h2 = document.querySelector('h2')
 const allBtns = document.querySelectorAll(".btn")
 
-document.addEventListener("keypress", ()=>{
+const startScreen = function() {
     if (started == false){
         h2.innerText = `Game started`
         h2.style.color = "black"
@@ -19,7 +19,12 @@ document.addEventListener("keypress", ()=>{
 
         levelUp()
     }
-})
+}
+//for PC
+document.addEventListener("keypress", startScreen)
+//for mobile
+document.addEventListener("ontouched", startScreen)
+
 
 
 // function to increament the level
