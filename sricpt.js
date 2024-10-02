@@ -23,7 +23,7 @@ const startScreen = function() {
 //for PC
 document.addEventListener("keypress", startScreen)
 //for mobile
-document.addEventListener("ontouched", startScreen)
+document.addEventListener("ontouchend", startScreen)
 
 
 
